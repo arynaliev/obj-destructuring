@@ -7,13 +7,7 @@ const StudentsView = () => {
   return (
     <div className="studentsView-box">
       {studentsList.map((el, index) => (
-        <ProfileCard
-          key={index}
-          firstName={el.firstName}
-          job={el.job}
-          favoriteColor={el.favoriteColor}
-          imgSrc={el.imgSrc}
-        />
+        <ProfileCard key={index} studentsInfo={el} />
       ))}
     </div>
   );
